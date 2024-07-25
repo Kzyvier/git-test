@@ -1,9 +1,22 @@
 public class script {
     public static void main(String[] args) {
-        System.out.printf("String %10d \n", 532);
-        System.out.printf("String %10d \n", 5);
-        System.out.printf("String %10d \n", 100000);
-        System.out.printf("String %10d \n", 1000000000);
+        Human h1 = new Human("Bob", 40);
 
+        System.out.println(h1.toString());
+
+    }
+}
+
+class Human{
+    private String name;
+    private int age;
+
+    public Human(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public String toString(){
+        return name+","+age;
     }
 }
